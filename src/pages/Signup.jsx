@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { assets } from '../assets/assets.js';
-import Input from '../components/input.jsx';
+import Input from '../components/Input.jsx';
 import { Link } from "react-router-dom";
 import { validateEmail } from '../util/validation.js';
 import { LoaderCircle } from 'lucide-react';
