@@ -26,7 +26,7 @@ const Expense = () => {
     try {
       const response = await axiosConfig.get(API_ENDPOINTS.GET_ALL_EXPENSE);
       if (response.status === 200) {
-        console.log(response.data);
+       
         setExpenseData(response.data);
       }
     } catch (error) {
@@ -39,7 +39,7 @@ const Expense = () => {
     try{
       const response = await axiosConfig.get(API_ENDPOINTS.CATEGORY_BY_TYPE("expense"));
       if(response.status === 200){
-        console.log(response.data);
+    
         setCategories(response.data);
       }
     }

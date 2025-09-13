@@ -26,7 +26,7 @@ const ExpenseOverview = ({transactions, onAddExpense}) => {
         </div>
         <button
           onClick={onAddExpense}
-          className="flex items-center gap-2 p-2 bg-blue-500 text-white rounded"
+          className="flex items-center gap-2 p-2 btn-gradient text-white rounded"
         >
           <Plus size={15} className="text-lg" /> Add Expense
         </button>

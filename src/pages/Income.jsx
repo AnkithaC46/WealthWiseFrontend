@@ -26,7 +26,7 @@ const Income = () => {
     try {
       const response = await axiosConfig.get(API_ENDPOINTS.GET_ALL_INCOMES);
       if (response.status === 200) {
-        console.log(response.data);
+      
         setIncomeData(response.data);
       }
     } catch (error) {
@@ -39,7 +39,7 @@ const Income = () => {
     try{
       const response = await axiosConfig.get(API_ENDPOINTS.CATEGORY_BY_TYPE("income"));
       if(response.status === 200){
-        console.log(response.data);
+    
         setCategories(response.data);
       }
     }

@@ -18,20 +18,20 @@ const CategoryList = ({ categories, onEditCategory }) => {
                 key={category.id}
                 className="group relative flex items-center gap-4 p-3 rounded-lg hover:bg-gray-100/60"
               >
-                <div className="w-10 h-10 flex items-center justify-center text-xl text-gray-800 bg-gray-300 rounded-full">
+                <div className="w-10 h-10 flex items-center justify-center text-xl text-gray-800 bg-purple-200 rounded-full">
                   {category.icon ? (
                     <span className="text-2xl">
                       <img
                         src={category.icon}
                         alt="Category Name"
-                        className="h-5 w-5"
+                        className="h-5 w-5 "
                       />
                     </span>
                   ) : (
                     <Layers2 className="text-blue-500" size={24} />
                   )}
                 </div>
-                <div className="flex-1 flex items-center justify-between bg-gray-100 p-3 rounded border border-gray-300">
+                <div className="flex-1 flex items-center justify-between bg-gray-100 p-3 rounded border border-gray-100 shadow-gray-300">
                   <div>
                     <p className="text-sm text-gray-800 font-medium">
                       {category.name}
@@ -43,7 +43,7 @@ const CategoryList = ({ categories, onEditCategory }) => {
                   <div className="flex items-center gap-2">
                     <button 
                     onClick={()=>onEditCategory(category)}
-                    className="text-gray-600 hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer ">
+                    className="text-gray-600 hover:text-purple-600 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer ">
                       <Edit size={18} />
                     </button>
                   </div>

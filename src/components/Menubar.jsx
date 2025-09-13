@@ -53,7 +53,7 @@ const Menubar = ({activeMenu}) => {
             </button>
             <div className="flex items-center gap-2">
             <img src={assets.logo} alt="logo"   className="h-10 w-10"/>
-                <span className="text-lg font-medium text-white truncate">WealthWise</span>
+                <span className="text-lg  truncate font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-600">WealthWise</span>
             </div>
 
         </div>
@@ -61,8 +61,8 @@ const Menubar = ({activeMenu}) => {
         <div className="relative" ref={dropDownRef}>
             <button 
             onClick={()=>setShowDropDown(!showDropDown)}
-            className="flex items-center justify-center w-10 h-10 bg-gray-300 rounded-full transition-colors duration-200 focus:outline-none focus:ring-3 focus:ring-blue-800 focus:ring-offset-2">
-            <User className="text-blue-500"/>
+            className="flex items-center justify-center w-10 h-10 bg-gray-300 rounded-full transition-colors duration-200 focus:outline-none focus:ring-3 focus:ring-purple-800 focus:ring-offset-2">
+            <User className="text-purple-600"/>
               </button>
 
              {showDropDown && (
@@ -70,7 +70,7 @@ const Menubar = ({activeMenu}) => {
                     <div className="px-4 py-3 border-b border-gray-100">
                         <div className="flex items-center gap-3">
                             <div className="flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full">
-                                <User className="w-4 h-4 text-blue-600"/>
+                                <User className="w-4 h-4 text-purple-600"/>
                             </div>
                             <div className="flex-1 min-w-0">
                                 <p className="text-sm font-medium text-gray-800 truncate">
@@ -86,7 +86,7 @@ const Menubar = ({activeMenu}) => {
                        <button 
                        onClick={handleLogOut}
                         className="flex items-center gap-3 w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-150">
-                          <LogOut className="w-4 h-4 text-blue-500"/> 
+                          <LogOut className="w-4 h-4 text-purple-600"/> 
                           <span>Logout</span>
                        </button>
                     </div>
@@ -98,7 +98,7 @@ const Menubar = ({activeMenu}) => {
            
         </div>
       {openSideMenu && (
-        <div className="fixed left-0 right-0 bg-white border-b border-gray-200 lg:hidden z-20 top-[73px]">
+        <div className="fixed left-0 right-0 transparent border-b border-gray-200 lg:hidden z-20 top-[73px]">
             <Sidebar activeMenu={activeMenu}/>
         </div>
       )}

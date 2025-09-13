@@ -60,7 +60,7 @@ const CategoryForm = ({onAddCategory,initialCategoryData,isEditing}) => {
             type="button"
             disabled={loading}
             onClick={handleSubmit}
-            className="add-btn add-btn-fill bg-blue-500 text-white p-2 rounded">
+            className="add-btn add-btn-fill btn-gradient text-white p-2 rounded">
             {loading?(
                 <>
                 <LoaderCircle className="w-4 h-4 animate-spin"/>

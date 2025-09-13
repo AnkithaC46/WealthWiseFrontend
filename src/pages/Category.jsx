@@ -24,7 +24,6 @@ const Category = () => {
     try {
       const response = await axiosConfig.get(API_ENDPOINTS.GET_ALL_CATEGORIES);
       if (response.status === 200) {
-        console.log("categories", response.data);
         setCategoryData(response.data);
       }
     } catch (error) {
@@ -103,7 +102,7 @@ const Category = () => {
           <h2 className="text-2xl font-semibold">All Categories</h2>
           <button
             onClick={() => setOpenAddCategoryModel(true)}
-            className="add-btn flex items-center gap-1 bg-blue-400 rounded p-3 text-white"
+            className="add-btn flex items-center gap-1 btn-gradient rounded p-3 text-white"
           >
             <Plus size={15} />
             Add Category

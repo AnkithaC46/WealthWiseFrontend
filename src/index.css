@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
 @import "tailwindcss";
 
+
 body {
-  background-color: #fcfbfc;
-  overflow-x: hidden;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: brightness(0) invert(1);
 }
 .card {
-  @apply p-4 bg-white rounded-xl shadow-md mt-3;
+  @apply p-4 bg-white border border-gray-200 rounded-xl shadow-md mt-3;
 }
 .card-2{
-  @apply p-4 bg-gray-300 rounded-xl shadow-md mt-3 mb-2;
+  @apply p-4 bg-purple-200 py-15 rounded-xl shadow-md mt-3 ;
 }
+
+.btn-gradient {
+    @apply bg-gradient-to-r from-blue-500 to-purple-700 
+           hover:from-blue-600 hover:to-purple-800 
+           text-white font-bold shadow-lg;
+  }
+
+  .bg-main{
+    @apply bg-gradient-to-br from-black to-purple-900;
+  }

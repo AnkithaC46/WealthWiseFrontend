@@ -52,8 +52,8 @@ const CustomLineChart = ({ data }) => {
         <Area
           type="monotone"
           dataKey="amount"
-          stroke="#5a61caff"
-          fill="#307197ff"
+          stroke="#390762ff"
+          fill="#947cc2e2"
           fillOpacity={0.3}
           activeDot={{ r: 8 }}
         />

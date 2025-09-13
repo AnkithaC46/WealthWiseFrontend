@@ -58,12 +58,12 @@ const Login = () => {
     }
   }
   return (
-     <div className="h-screen w-full relative flex justify-center items-center overflow-hidden">
+     <div className="h-screen w-full relative flex justify-center items-center overflow-hidden bg-main">
             <img src={assets.logo} alt="logo"   className="absolute top-4 left-4 w-16 h-16 z-20"/>
       
-     <img src={assets.login_bg} alt="background" className='absolute inset-0 w-full h-full object-cover filter  ' />
+     {/* <img src={assets.login_bg} alt="background" className='absolute inset-0 w-full h-full object-cover filter  ' /> */}
      <div className="relative z-10 w-full max-w-lg px-6">
-      <div className="bg-black bg-opacity-95 backdrop-blur-sm rounded-lg shadow-2xl p-8 max-h-[90vh] overflow-y-auto">
+      <div className="transparent bg-opacity-95 backdrop-blur-sm rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.6)]  p-8 max-h-[90vh] overflow-y-auto">
         <h3 className="text-2xl font-semibold text-white text-center mb-2">
           Welcome Back
         </h3>
@@ -90,12 +90,12 @@ const Login = () => {
               />
             
             {error && (
-              <p className="text-red-500 text-sm text-center bg-black p-2 rounded">
+              <p className="text-red-500 text-sm text-center  p-2 rounded">
                 {error}
               </p>
            
             )}
-            <button disabled={isLoading} className={`bg-blue-600 text-white rounded w-full py-3 text-lg font-medium flex items-center justify-center gap-2 ${isLoading?'opacity-60 cursor-not-allowed':''}`} type="submit">
+            <button disabled={isLoading} className={`bg-gradient-to-r from-blue-500 to-purple-700 rounded-full text-white rounded w-full py-3 text-lg font-medium flex items-center justify-center gap-2 ${isLoading?'opacity-60 cursor-not-allowed':''}`} type="submit">
                {isLoading ? (
                  <>
                  <LoaderCircle className='animate-spin w-5 h-5'/>
