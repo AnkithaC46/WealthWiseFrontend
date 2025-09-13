@@ -77,7 +77,7 @@ const AddIncomeForm = ({ onAddIncome, categories}) => {
             type="button"
             disabled={loading}
             onClick={handleSubmit}
-            className="add-btn add-btn-fill btn-gradient text-white p-2 rounded">
+            className="flex items-center justify-between add-btn-fill btn-gradient text-white p-2 rounded">
             {loading?(
                 <>
                 <LoaderCircle className="w-4 h-4 animate-spin"/>

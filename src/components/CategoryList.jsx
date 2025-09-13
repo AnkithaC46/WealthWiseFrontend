@@ -43,8 +43,8 @@ const CategoryList = ({ categories, onEditCategory }) => {
                   <div className="flex items-center gap-2">
                     <button 
                     onClick={()=>onEditCategory(category)}
-                    className="text-gray-600 hover:text-purple-600 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer ">
-                      <Edit size={18} />
+                    className="text-purple-300 active:text-purple-600 hover:text-purple-600  group-hover:opacity-100 transition-opacity cursor-pointer ">
+                      <Edit size={18}  />
                     </button>
                   </div>
                 </div>

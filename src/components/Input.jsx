@@ -12,12 +12,12 @@ const input = ({ label, value, onChange, placeholder, type,isSelect, options }) 
       <label className="text-[13px] block text-slate-200 mb-2">{label}</label>
       <div className="relative">
        {isSelect?(
-        <select className="w-full bg-black outline-none border border-gray-900 rounded-md py-2 px-3 text-white leading focus:outline-none focus:border-blue-500"
+        <select className="w-full  outline-none border border-gray-900 rounded-md py-2 px-3 text-white leading focus:outline-none focus:border-blue-500"
           value={value}
           onChange={(e)=>onChange(e)}
         >
           {options.map((option)=>(
-           <option key={option.value} value={option.value}>
+           <option className="bg-black" key={option.value} value={option.value}>
             {option.label}
            </option>
           ))}

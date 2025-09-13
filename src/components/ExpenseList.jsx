@@ -29,7 +29,7 @@ const ExpenseList = ({ transactions, onDelete, onDownload, onEmail }) => {
           <button
             disabled={loading}
             onClick={handleEmail}
-            className="flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-gray-100"
+            className="flex items-center gap-2 rounded-lg bg-purple-200 border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-purple-400"
           >
             {loading ? (
               <>
@@ -47,7 +47,7 @@ const ExpenseList = ({ transactions, onDelete, onDownload, onEmail }) => {
 
           <button
             onClick={handleDownload}
-            className="flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-gray-100"
+            className="flex items-center bg-purple-200 gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-purple-400"
           >
             {loading ? (
               <>

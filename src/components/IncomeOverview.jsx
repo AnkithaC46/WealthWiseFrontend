@@ -20,7 +20,7 @@ const IncomeOverview = ({ transactions, onAddIncome }) => {
       <div className="flex items-center justify-between">
         <div>
           <h5 className="text-lg font-semibold">Income Overview</h5>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <p className="text-xs text-gray-400 mt-0.5 mt-2">
             Track Your Earnings over time and analyze your income trends.
           </p>
         </div>

@@ -29,7 +29,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
           <button
             disabled={loading}
             onClick={handleEmail}
-            className="flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-gray-100"
+            className="flex items-center gap-2 bg-purple-200 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-purple-400"
           >
             {loading ? (
               <>
@@ -38,7 +38,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
               </>
             ) : (
               <>
-                <Mail size={15} className="text-blue-500" />
+                <Mail size={15} className="text-purple-800" />
                 Email
               </>
             )}
@@ -47,7 +47,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
 
           <button
             onClick={handleDownload}
-            className="flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-gray-100"
+            className="flex items-center gap-2 bg-purple-200 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium hover:bg-purple-400"
           >
             {loading ? (
               <>
@@ -56,7 +56,7 @@ const IncomeList = ({ transactions, onDelete, onDownload, onEmail }) => {
               </>
             ) : (
               <>
-                <Download size={15} className="text-blue-500" />
+                <Download size={15} className="text-purple-800" />
                 Download
               </>
             )}

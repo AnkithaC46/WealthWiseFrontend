@@ -40,7 +40,7 @@ const LandingPage = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
             to="/signup"
-            className="px-8 py-4 md:px-10 md:py-5 rounded-full text-white text-lg md:text-xl font-bold bg-gradient-to-r from-blue-400 to-teal-600 hover:from-green-500 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            className="px-8 py-4 md:px-10 md:py-5 rounded-full text-white text-lg md:text-xl font-bold bg-gradient-to-r from-blue-400 to-teal-600 hover:from-green-500 hover:to-teal-700 active:from-green-500 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Get Started
           </Link>
@@ -54,7 +54,10 @@ const LandingPage = () => {
       </header>
 
       {/* Features Section */}
-      <section id="learn-more" className="py-16 md:py-20 bg-gray-800 text-center">
+      <section
+        id="learn-more"
+        className="py-16 md:py-20 bg-gray-800 text-center"
+      >
         <h2 className="text-3xl md:text-5xl font-extrabold mb-10 md:mb-12 text-white">
           Why Choose WealthWise?
         </h2>
@@ -68,8 +71,8 @@ const LandingPage = () => {
               Income & Expense Tracking
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              Easily add and manage your income and expenses to keep every transaction organized.
-
+              Easily add and manage your income and expenses to keep every
+              transaction organized.
             </p>
           </div>
           {/* Feature Card 2 */}
@@ -81,8 +84,8 @@ const LandingPage = () => {
               Balance Overview
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              Stay on top of your total balance with clear summaries of income, expenses, and savings.
-
+              Stay on top of your total balance with clear summaries of income,
+              expenses, and savings.
             </p>
           </div>
           {/* Feature Card 3 */}
@@ -94,8 +97,8 @@ const LandingPage = () => {
               Charts & Insights
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              Visualize your finances with interactive income–expense charts and easy-to-read pie charts.
-
+              Visualize your finances with interactive income–expense charts and
+              easy-to-read pie charts.
             </p>
           </div>
           <div className="p-6 md:p-8 bg-gray-900 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-green-500">
@@ -104,11 +107,10 @@ const LandingPage = () => {
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
               Filter Transactions
-
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              Quickly find what you need with powerful filters for dates, categories, and transaction types.
-
+              Quickly find what you need with powerful filters for dates,
+              categories, and transaction types.
             </p>
           </div>
           <div className="p-6 md:p-8 bg-gray-900 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-green-500">
@@ -116,12 +118,11 @@ const LandingPage = () => {
               <i className="fas fa-lightbulb"></i>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
-             Email Scheduler
-
+              Email Scheduler
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-           Get daily reminders to log your income and expenses along with a detailed daily financial report delivered straight to your inbox.
-
+              Get daily reminders to log your income and expenses along with a
+              detailed daily financial report delivered straight to your inbox.
             </p>
           </div>
           <div className="p-6 md:p-8 bg-gray-900 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-green-500">
@@ -129,51 +130,59 @@ const LandingPage = () => {
               <i className="fas fa-lightbulb"></i>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
-             Export & Download
-
+              Export & Download
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-             Download your income and expense reports in XLSX format and get them delivered straight to your email.
-
+              Download your income and expense reports in XLSX format and get
+              them delivered straight to your email.
             </p>
           </div>
         </div>
       </section>
 
       {/* Website Tour Section */}
-      <section className="py-16 md:py-20 bg-gray-900 text-center" id="website-tour">
+      <section
+        className="py-16 md:py-20 bg-gray-900 text-center"
+        id="website-tour"
+      >
         <h2 className="text-3xl md:text-5xl font-extrabold mb-10 md:mb-12 text-white">
           A Glimpse Inside WealthWise
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto px-6">
-          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform active:scale-105 hover:scale-105 transition-all duration-300">
             <img
-              src={assets.dashboard} 
+              src={assets.dashboard}
               alt="WealthWise Dashboard"
               className="w-full  h-auto object-cover rounded-xl border border-gray-700 group-hover:border-purple-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <h3 className="text-xl font-semibold text-white">Intuitive Dashboard</h3>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-400 flex items-end p-6">
+              <h3 className="text-xl font-semibold text-white">
+                Intuitive Dashboard
+              </h3>
             </div>
           </div>
-          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform  active:scale-105 hover:scale-105 transition-all duration-300">
             <img
               src={assets.chart}
               alt="WealthWise Transactions"
               className="w-full h-auto object-cover rounded-xl border border-gray-700 group-hover:border-blue-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <h3 className="text-xl font-bold text-white">Insightful Charts & Graphs</h3>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <h3 className="text-xl font-bold text-white">
+                Insightful Charts & Graphs
+              </h3>
             </div>
           </div>
-          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform active:scale-105 hover:scale-105 transition-all duration-300">
             <img
               src={assets.filter}
               alt="WealthWise Charts"
               className="w-full h-auto object-cover rounded-xl border border-gray-700 group-hover:border-green-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <h3 className="text-xl font-semibold text-white">Effortless Transaction Filtering</h3>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <h3 className="text-xl font-semibold text-white">
+                Effortless Transaction Filtering
+              </h3>
             </div>
           </div>
         </div>
@@ -185,7 +194,8 @@ const LandingPage = () => {
           Ready to Grow Your Wealth?
         </h2>
         <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-8 md:mb-10">
-          Join a growing community of wise savers and effortlessly take charge of your financial journey today.
+          Join a growing community of wise savers and effortlessly take charge
+          of your financial journey today.
         </p>
         <Link
           to="/signup"

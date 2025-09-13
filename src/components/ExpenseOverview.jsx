@@ -20,7 +20,7 @@ const ExpenseOverview = ({transactions, onAddExpense}) => {
       <div className="flex items-center justify-between">
         <div>
           <h5 className="text-lg font-semibold">Expense Overview</h5>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <p className="text-xs text-gray-400 mt-0.5 mt-2">
             Track Your Expenses over time and analyze your expense trends.
           </p>
         </div>
