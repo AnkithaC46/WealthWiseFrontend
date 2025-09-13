@@ -1,6 +1,7 @@
 // components/HomePage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import { assets } from "../assets/assets";
 
 const LandingPage = () => {
   return (
@@ -139,13 +140,52 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Website Tour Section */}
+      <section className="py-16 md:py-20 bg-gray-900 text-center" id="website-tour">
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-10 md:mb-12 text-white">
+          A Glimpse Inside WealthWise
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto px-6">
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <img
+              src={assets.dashboard} 
+              alt="WealthWise Dashboard"
+              className="w-full  h-auto object-cover rounded-xl border border-gray-700 group-hover:border-purple-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <h3 className="text-xl font-semibold text-white">Intuitive Dashboard</h3>
+            </div>
+          </div>
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <img
+              src={assets.chart}
+              alt="WealthWise Transactions"
+              className="w-full h-auto object-cover rounded-xl border border-gray-700 group-hover:border-blue-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <h3 className="text-xl font-bold text-white">Insightful Charts & Graphs</h3>
+            </div>
+          </div>
+          <div className="relative group rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <img
+              src={assets.filter}
+              alt="WealthWise Charts"
+              className="w-full h-auto object-cover rounded-xl border border-gray-700 group-hover:border-green-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <h3 className="text-xl font-semibold text-white">Effortless Transaction Filtering</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="flex flex-col items-center justify-center py-16 px-6 md:px-12 md:py-40 bg-gradient-to-br from-black to-purple-900 text-center min-h-[60vh] md:min-h-[80vh]">
         <h2 className="text-3xl md:text-5xl font-extrabold mb-6 md:mb-8 text-white">
           Ready to Grow Your Wealth?
         </h2>
         <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-8 md:mb-10">
-          Join a growing community of wise savers and effortlessly take charge of your financial journey today.”
+          Join a growing community of wise savers and effortlessly take charge of your financial journey today.
         </p>
         <Link
           to="/signup"

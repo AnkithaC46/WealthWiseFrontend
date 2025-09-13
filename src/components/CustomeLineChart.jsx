@@ -36,29 +36,37 @@ const CustomTooltip = ({ active, payload, label }) => {
 const CustomLineChart = ({ data }) => {
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <AreaChart
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="date" />
-        <YAxis />
-        <Tooltip content={<CustomTooltip />} /> {/* Use custom tooltip */}
-        <Area
-          type="monotone"
-          dataKey="amount"
-          stroke="#390762ff"
-          fill="#947cc2e2"
-          fillOpacity={0.3}
-          activeDot={{ r: 8 }}
-        />
-      </AreaChart>
-    </ResponsiveContainer>
+  <AreaChart
+    data={data}
+    margin={{
+      top: 5,
+      right: 30,
+      left: 20,
+      bottom: 5,
+    }}
+  >
+    <defs>
+      <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="20%" stopColor="#45077bff" stopOpacity={1} />  {/* purple top */}
+        <stop offset="100%" stopColor="#ffffff" stopOpacity={0.3} /> {/* fades to white */}
+      </linearGradient>
+    </defs>
+
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="date" />
+    <YAxis />
+    <Tooltip content={<CustomTooltip />} />
+
+    <Area
+      type="monotone"
+      dataKey="amount"
+      stroke="#7e22ce"  // purple border line
+      fill="url(#purpleGradient)" // use gradient
+      activeDot={{ r: 8 }}
+    />
+  </AreaChart>
+</ResponsiveContainer>
+
   );
 };
 
