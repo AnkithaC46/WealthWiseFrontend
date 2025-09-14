@@ -62,13 +62,17 @@ WealthWise comes packed with powerful features to simplify your financial manage
 A glimpse of WealthWise in action:
 
 ### Dashboard
-![Dashboard Screenshot](./screenshots/dashboard.png)
+
+<img src="WealthWise Screenshot/dashboard.png" >
+
 
 ### Charts & Insights
-![Charts Screenshot](./screenshots/charts.png)
+
+<img src="WealthWise Screenshot/income.png" >
+<img src="WealthWise Screenshot/expense.png" >
 
 ### Filters
-![Filter Screenshot](./screenshots/filters.png)
+<img src="WealthWise Screenshot/filter.png" >
 
 
 ### 🛠️ Technologies Used
