@@ -83,9 +83,8 @@ A glimpse of WealthWise in action:
 *   **Tailwind CSS:** For styling the web content.
 
 
-**Backend (Implied, for full functionality like email scheduler & export):**
+**Backend :**
 
-*   **Java:** Robust backend logic for transaction management.
 *   **Spring Boot:** Framework for building production-ready, stand-alone Spring applications.
 *   **MySQL:** Relational database for storing financial data.
 
@@ -141,6 +140,6 @@ If you have a suggestion that would make this better, please fork the repo and c
 ### 📧 Contact
 
 Ankitha C - ankithac46@gmail.com
-Project Link: [https://github.com/AnkithaC46/WealthWiseFrontend](https://github.com/AnkithaC46/WealthWiseFrontend)
+
 
 ---
